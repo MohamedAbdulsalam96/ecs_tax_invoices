@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ecs_tax_invoices *.css
+recursive-include ecs_tax_invoices *.csv
+recursive-include ecs_tax_invoices *.html
+recursive-include ecs_tax_invoices *.ico
+recursive-include ecs_tax_invoices *.js
+recursive-include ecs_tax_invoices *.json
+recursive-include ecs_tax_invoices *.md
+recursive-include ecs_tax_invoices *.png
+recursive-include ecs_tax_invoices *.py
+recursive-include ecs_tax_invoices *.svg
+recursive-include ecs_tax_invoices *.txt
+recursive-exclude ecs_tax_invoices *.pyc
