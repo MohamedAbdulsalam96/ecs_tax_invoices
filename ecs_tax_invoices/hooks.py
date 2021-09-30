@@ -16,7 +16,7 @@ doc_events = {
 	"validate": "ecs_tax_invoices.ecs_tax_invoices.overrides.sales_order.sales_order.validate_tax_type"
 },
 "Sales Invoice": {
-	"validate": "ecs_tax_invoices.ecs_tax_invoices.overrides.sales_invoice.sales_invoice.validate_taxe_type"
+	"validate": "ecs_tax_invoices.ecs_tax_invoices.overrides.sales_invoice.sales_invoice.validate_tax_type"
 }
 }
 doctype_js = {
