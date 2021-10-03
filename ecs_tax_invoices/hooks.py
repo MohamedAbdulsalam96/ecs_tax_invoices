@@ -19,10 +19,12 @@ doc_events = {
 	"validate": "ecs_tax_invoices.ecs_tax_invoices.overrides.sales_invoice.sales_invoice.validate_tax_type"
 }
 }
+'''
 doctype_js = {
 	"Sales Order": "ecs_tax_invoices/overrides/sales_order/sales_order.js",
     "Sales Invoice": "ecs_tax_invoices/overrides/sales_invoice/sales_invoice.js"
 }
+'''
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/ecs_tax_invoices/css/ecs_tax_invoices.css"

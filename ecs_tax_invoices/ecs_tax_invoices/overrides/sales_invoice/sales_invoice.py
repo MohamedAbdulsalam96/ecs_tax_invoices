@@ -13,7 +13,7 @@ from frappe.utils import add_to_date, now, nowdate
 
 @frappe.whitelist()
 def validate_tax_type(doc, method=None):
-    if doc.tax_type == "Included":
+    if doc.tax_type == "Excluded":
         for y in doc.items:
             group = y.item_group
             item_taxes_template = frappe.db.sql(""" select item_tax_template from `tabItem Tax` where parent=%s """,group,as_dict=1)
@@ -21,7 +21,7 @@ def validate_tax_type(doc, method=None):
                 y.item_tax_template = z.item_tax_template
         for x in doc.taxes:
             x.included_in_print_rate = 1
-    if doc.tax_type == "Excluded":
+    if doc.tax_type == "Included":
         for y in doc.items:
             group = y.item_group
             item_taxes_template = frappe.db.sql(""" select item_tax_template from `tabItem Tax` where parent=%s """,group,as_dict=1)
